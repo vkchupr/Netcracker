@@ -5,6 +5,7 @@ import com.netcracker.edu.dao.*;
 public class Manager {
 
     public static void main(String[] args){
+        EmployeeDAO employeeDAO = new EmployeeDAOImpl();
 
     }
 }
