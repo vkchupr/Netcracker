@@ -4,27 +4,26 @@ import com.netcracker.edu.object.Employee;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.lang.reflect.Field;
 import java.util.*;
 import java.util.regex.Pattern;
 
 public class EmployeeDAOImpl implements EmployeeDAO {
-    private final Logger logger = LoggerFactory.getLogger(EmployeeDAO.class);
+    private static final Logger logger = LoggerFactory.getLogger(EmployeeDAO.class);
 
     private Map<Employee, Map<String, String>> employees;
 
     public EmployeeDAOImpl() {
         employees = new HashMap<Employee, Map<String, String>>();
-        logger.info("Employee DAO was created");
+        logger.trace("Employee DAO was created");
     }
 
     public Collection<Employee> getAllEmployees() {
         return employees.keySet();
     }
 
-    public Collection<Employee> getEmployeeByProperty(String key, Pattern valuePattern) {
-        if(key == null || valuePattern == null) {
-            logger.warn("key or search pattern is null");
+    public Collection<Employee> getEmployeesByProperty(String key, String value) {
+        if(key == null || value == null) {
+            logger.warn("key or value is null");
             return null;
         }
 
@@ -37,7 +36,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
             if(prop == null)
                 continue;
 
-            if(valuePattern.matcher(prop).matches()) {
+            if(prop.equals(value)) {
                 logger.trace("found an employee that matches search pattern");
                 result.add(employee);
             }
@@ -48,13 +47,15 @@ public class EmployeeDAOImpl implements EmployeeDAO {
     public void updateEmployee(Employee employee) {
         if(employee == null)
             return;
+
         if(employees.get(employee) == null){
             logger.warn("employee () wasn't found", employee);
             return;
         }
 
-        Map<String, String> props = getMapOfProperties(employee);
+        Map<String, String> props = employee.getMapOfProperties();
         employees.replace(employee, props);
+        logger.info("Updated: ()", employee);
     }
 
     public void addEmployee(Employee employee) {
@@ -68,8 +69,9 @@ public class EmployeeDAOImpl implements EmployeeDAO {
             return;
         }
 
-        Map<String, String> props = getMapOfProperties(employee);
+        Map<String, String> props = employee.getMapOfProperties();
         employees.put(employee, props);
+        logger.info("Added: ()", employee);
     }
 
     public void deleteEmployee(Employee employee) {
@@ -82,23 +84,5 @@ public class EmployeeDAOImpl implements EmployeeDAO {
             logger.info("() was successfully removed", employee.getFullName());
         else
             logger.warn("error while deleting ()", employee.getFullName());
-    }
-
-    private Map<String, String> getMapOfProperties(Employee employee){
-        Map<String, String> props = new HashMap<String, String>();
-        Field[] fields = employee.getClass().getFields();
-
-        for(int i = 0; i < fields.length; i++){
-            String key = null, value;
-            try {
-                key = fields[i].getName();
-                value = fields[i].get(employee).toString();
-                props.put(key, value);
-            } catch (IllegalAccessException e) {
-                logger.warn("Unable to extract field () from ()", key, employee);
-            }
-        }
-
-        return props;
     }
 }

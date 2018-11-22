@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e22a6e9-02be-4b2d-a536-1835a25d4f1c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/manager/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/object/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/object/Employee.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,8 +21,8 @@
       <file leaf-file-name="EmployeeDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            <state relative-caret-position="220">
+              <caret line="11" column="77" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,40 +30,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeDAOImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmployeeDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+            <state relative-caret-position="417">
+              <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#EmployeeDAOImpl#0;class#EmployeeDAOImpl#0" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#623#624#0" expanded="true" />
-                <element signature="method#getEmployeeByProperty#0;class#EmployeeDAOImpl#0" />
                 <element signature="e#873#883#0" expanded="true" />
-                <element signature="method#updateEmployee#0;class#EmployeeDAOImpl#0" />
                 <element signature="method#deleteEmployee#0;class#EmployeeDAOImpl#0" />
-                <element signature="method#getMapOfProperties#0;class#EmployeeDAOImpl#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/Map.java">
+      <file leaf-file-name="Manager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/manager/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="883" column="14" selection-start-line="883" selection-start-column="14" selection-end-line="883" selection-end-column="14" />
+            <state relative-caret-position="320">
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+              <folding>
+                <element signature="method#add#0;class#Manager#0" />
+                <element signature="method#listAll#0;class#Manager#0" />
+                <element signature="method#remove#0;class#Manager#0" />
+                <element signature="method#search#0;class#Manager#0" />
+                <element signature="method#checkAndserveCommand#0;class#Manager#0" />
+                <element signature="method#main#0;class#Manager#0" />
+                <element signature="method#printHints#0;class#Manager#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="FileInputStream.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/io/FileInputStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+            <state relative-caret-position="175">
+              <caret line="218" column="23" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -71,8 +75,12 @@
       <file leaf-file-name="Employee.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/object/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="700">
+              <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getMapOfProperties#0;class#Employee#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,11 +108,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/com.netcracker.edu.manager/Manager.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com.netcracker.edu.manager/Manager.java" />
-        <option value="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/object/Employee.java" />
-        <option value="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/manager/Manager.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/object/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAO.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/netcracker/edu/manager/Manager.java" />
       </list>
     </option>
   </component>
@@ -334,12 +342,12 @@
       <workItem from="1542836313025" duration="863000" />
       <workItem from="1542837441166" duration="1796000" />
       <workItem from="1542908202486" duration="1126000" />
-      <workItem from="1542913962524" duration="1144000" />
+      <workItem from="1542913962524" duration="10375000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8398000" />
+    <option name="totallyTimeSpent" value="17629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -347,13 +355,13 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.4946695" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4946695" weight="0.32900432" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021322" side_tool="true" weight="0.19155844" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.19155844" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.27705628" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
@@ -363,7 +371,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43073592" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -384,8 +392,43 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/manager/Manager.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/manager/Manager.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAOImpl.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAOImpl.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="24" />
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&quot;Emp&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAO.java">
@@ -405,13 +448,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#EmployeeDAOImpl#0;class#EmployeeDAOImpl#0" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="method#getEmployeeByProperty#0;class#EmployeeDAOImpl#0" />
             <element signature="e#873#883#0" expanded="true" />
-            <element signature="method#updateEmployee#0;class#EmployeeDAOImpl#0" />
             <element signature="method#deleteEmployee#0;class#EmployeeDAOImpl#0" />
-            <element signature="method#getMapOfProperties#0;class#EmployeeDAOImpl#0" />
           </folding>
         </state>
       </provider>
@@ -475,13 +513,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#EmployeeDAOImpl#0;class#EmployeeDAOImpl#0" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="method#getEmployeeByProperty#0;class#EmployeeDAOImpl#0" />
             <element signature="e#873#883#0" expanded="true" />
-            <element signature="method#updateEmployee#0;class#EmployeeDAOImpl#0" />
             <element signature="method#deleteEmployee#0;class#EmployeeDAOImpl#0" />
-            <element signature="method#getMapOfProperties#0;class#EmployeeDAOImpl#0" />
           </folding>
         </state>
       </provider>
@@ -507,13 +540,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#EmployeeDAOImpl#0;class#EmployeeDAOImpl#0" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="method#getEmployeeByProperty#0;class#EmployeeDAOImpl#0" />
             <element signature="e#873#883#0" expanded="true" />
-            <element signature="method#updateEmployee#0;class#EmployeeDAOImpl#0" />
             <element signature="method#deleteEmployee#0;class#EmployeeDAOImpl#0" />
-            <element signature="method#getMapOfProperties#0;class#EmployeeDAOImpl#0" />
           </folding>
         </state>
       </provider>
@@ -560,13 +588,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#EmployeeDAOImpl#0;class#EmployeeDAOImpl#0" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="method#getEmployeeByProperty#0;class#EmployeeDAOImpl#0" />
             <element signature="e#873#883#0" expanded="true" />
-            <element signature="method#updateEmployee#0;class#EmployeeDAOImpl#0" />
             <element signature="method#deleteEmployee#0;class#EmployeeDAOImpl#0" />
-            <element signature="method#getMapOfProperties#0;class#EmployeeDAOImpl#0" />
           </folding>
         </state>
       </provider>
@@ -603,13 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/manager/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -669,30 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/object/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -700,20 +692,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="541" selection-start-line="541" selection-end-line="541" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/object/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getMapOfProperties#0;class#Employee#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="218" column="23" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="77" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/dao/EmployeeDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+        <state relative-caret-position="417">
+          <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#EmployeeDAOImpl#0;class#EmployeeDAOImpl#0" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="method#getEmployeeByProperty#0;class#EmployeeDAOImpl#0" />
             <element signature="e#873#883#0" expanded="true" />
-            <element signature="method#updateEmployee#0;class#EmployeeDAOImpl#0" />
             <element signature="method#deleteEmployee#0;class#EmployeeDAOImpl#0" />
-            <element signature="method#getMapOfProperties#0;class#EmployeeDAOImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/netcracker/edu/manager/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="method#add#0;class#Manager#0" />
+            <element signature="method#listAll#0;class#Manager#0" />
+            <element signature="method#remove#0;class#Manager#0" />
+            <element signature="method#search#0;class#Manager#0" />
+            <element signature="method#checkAndserveCommand#0;class#Manager#0" />
+            <element signature="method#main#0;class#Manager#0" />
+            <element signature="method#printHints#0;class#Manager#0" />
           </folding>
         </state>
       </provider>
@@ -735,7 +780,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -783,7 +828,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Maven: org.slf4j:slf4j-api:1.7.25</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

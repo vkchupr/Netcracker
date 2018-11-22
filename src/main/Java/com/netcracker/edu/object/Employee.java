@@ -1,5 +1,9 @@
 package com.netcracker.edu.object;
 
+import java.lang.reflect.Field;
+import java.util.HashMap;
+import java.util.Map;
+
 public class Employee {
     String firstName;
     String lastName;
@@ -7,7 +11,7 @@ public class Employee {
     int age;
 
     public String getFullName() {
-        return lastName+" "+firstName;
+        return lastName + " " + firstName;
     }
 
     public String getFirstName() {
@@ -40,5 +44,28 @@ public class Employee {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("name: %s %s; age: %d; position: %s", firstName, lastName, age, position);
+    }
+
+    public Map<String, String> getMapOfProperties() {
+        Map<String, String> props = new HashMap<String, String>();
+        Field[] fields = getClass().getDeclaredFields();
+
+        for (int i = 0; i < fields.length; i++) {
+            String key = null, value = null;
+            key = fields[i].getName();
+            try {
+                value = fields[i].get(this).toString();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+            props.put(key, value);
+        }
+
+        return props;
     }
 }

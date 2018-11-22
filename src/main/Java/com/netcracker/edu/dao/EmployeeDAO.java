@@ -9,5 +9,5 @@ public interface EmployeeDAO {
     void addEmployee(Employee employee);
     void deleteEmployee(Employee employee);
     Collection<Employee> getAllEmployees();
-    Collection<Employee> getEmployeeByProperty(String property, Pattern valuePattern);
+    Collection<Employee> getEmployeesByProperty(String property, String value);
 }
