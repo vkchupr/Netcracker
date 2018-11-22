@@ -2,11 +2,12 @@ package com.netcracker.edu.dao;
 
 import com.netcracker.edu.object.Employee;
 
-import java.util.List;
+import java.util.Collection;
+import java.util.regex.Pattern;
 
 public interface EmployeeDAO {
-    List<Employee> getAllEmployees();
-    Employee getEmployee(int key);
-    void updateEmployee(Employee employee);
+    void addEmployee(Employee employee);
     void deleteEmployee(Employee employee);
+    Collection<Employee> getAllEmployees();
+    Collection<Employee> getEmployeeByProperty(String property, Pattern valuePattern);
 }
